@@ -1,10 +1,166 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-image: url("./images/fundo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nome img {
+  width: 277px;
+  height: 493px;
+margin-left: 200px;
+  aspect-ratio: 277/493;
+  border-radius: 88px;
+  margin-top: 227px;
+}
+.esquerda{
+  margin-top: 254px;
+}
+#Sobre {
+  background-color: #f2eadf;
+  height: 114vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #132640;
+}
+a {
+  color: #cfbdaf;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+#Sobre img {
+  width: 594px;
+  height: 783px;
+  flex-shrink: 0;
+  aspect-ratio: 494/783;
+  margin: 0 auto;
 
 }
-body{
-    width: 100%;
+.nome {
+  height: 100vh;
+  display: flex;
+}
+.nome p {
+  color: #cfbdaf;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.esquerda{
+text-align: center;
+  margin: 0 auto;
+  margin-top: 254px;
+}
+h1 {
+  color: #cfbdaf;
+  font-family: "Playball";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 701px;
 }
 
+h2 {
+  color: #4a6382;
+  font-family: "Playball";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+p {
+  color: #401801;
+  display: flex;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.curso {
+  width: 372px;
+  padding-left: 30px;
+}
+.habilidades {
+  width: 372px;
+  padding-right: 30px;
+}
+.para {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.retangulo {
+  width: 200px;
+  height: 25px;
+  flex-direction: column;
+}
+h3 {
+  color: #cfbdaf;
+  font-family: "Playball";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+#projeto {
+  background-image: url("./images/imagemprojeto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#Contato {
+  background-image: url("./images/contato.png");
+  height: 100vh;
+}
+h4 {
+  color: #401801;
+  font-family: "Playball";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.contact div img {
+  height: 20px;
+}
+.contact {
+  border-radius: 80px;
+  background: #401801;
+  margin: auto;
+  width: 483px;
+  height: 407px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-contact{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact p {
+  color: #cfbdaf;
+  text-align: center;
+  margin-bottom: 10px;
+}
