@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Projetos</title>
+  <style>
+    /* Estilo geral */
+body {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Botões de filtro */
+.filtros {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.filtros button {
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.filtros button:hover,
+.filtros button.ativo {
+  background-color: #a855f7;
+}
+
+/* GRID */
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* CARD */
+.card {
+  background-color: var(--cor);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+}
+
+/* Topo colorido */
+.card .topo {
+  padding: 1rem;
+}
+
+.card .topo h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Conteúdo escuro */
+.card .conteudo {
+  background-color: #111;
+  flex-grow: 1;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .categoria {
+  color: var(--cor);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.card h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: white;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Links */
+.links {
+  margin-top: 1rem;
+}
+
+.links a {
+  color: #a855f7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+
+
+  <!-- Grid de Projetos -->
+  <section class="projetos">
+
+    <!-- Card 1 -->
+    <div class="card" style="--cor:#c084fc;">
+      <div class="topo">
+        <h3>Projeto Front-end</h3>
+      </div>
+      <div class="conteudo">
+        <p class="categoria">Front-end</p>
+        <h4>Website Interativo</h4>
+        <p>Plataforma de visualização de dados com gráficos dinâmicos, construída com React e D3.js para uma experiência de usuário fluida.</p>
+        
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" style="--cor:#a1745e;">
+      <div class="topo">
+        <h3>Projeto Back-end</h3>
+      </div>
+      <div class="conteudo">
+        <p class="categoria">Back-end</p>
+        <h4>API de E-commerce</h4>
+        <p>API RESTful para uma loja online, desenvolvida com Node.js, Express e MongoDB. Inclui autenticação e gerenciamento de produtos.</p>
+      
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" style="--cor:#00e0e0;">
+      <div class="topo">
+        <h3>Projeto UI/UX</h3>
+      </div>
+      <div class="conteudo">
+        <p class="categoria">UI/UX Design</p>
+        <h4>App de Meditação</h4>
+        <p>Design de interface e experiência do usuário para um aplicativo mobile. Foco em navegação intuitiva e visual relaxante.</p>
+       
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" style="--cor:#00c957;">
+      <div class="topo">
+        <h3>Projeto Full Stack</h3>
+      </div>
+      <div class="conteudo">
+        <p class="categoria">Full Stack</p>
+        <h4>Sistema de Gerenciamento</h4>
+        <p>Aplicação completa para gerenciamento de tarefas em equipe, utilizando Vue.js no front-end e Django no back-end.</p>
+      
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" style="--cor:#ff5fa2;">
+      <div class="topo">
+        <h3>Landing Page</h3>
+      </div>
+      <div class="conteudo">
+        <p class="categoria">Front-end</p>
+        <h4>Landing Page Responsiva</h4>
+        <p>Landing page para evento de tecnologia, construída com HTML, CSS Grid e JavaScript puro.</p>
+       
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" style="--cor:#9ca3af;">
+      <div class="topo">
+        <h3>Microsserviço</h3>
+      </div>
+      <div class="conteudo">
+        <p class="categoria">Back-end</p>
+        <h4>Microsserviço de Notificações</h4>
+        <p>Serviço para envio de e-mails e notificações push, desenvolvido em Go para alta performance e escalabilidade.</p>
+       
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

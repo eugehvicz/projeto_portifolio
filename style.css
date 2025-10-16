@@ -22,7 +22,7 @@ margin-left: 200px;
 }
 #Sobre {
   background-color: #f2eadf;
-  height: 114vh;
+  height: 105vh;
   display: flex;
   flex-direction: column;
 }
@@ -124,11 +124,11 @@ h3 {
   background-image: url("./images/imagemprojeto.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 105vh;
 }
 #Contato {
   background-image: url("./images/contato.png");
-  height: 100vh;
+  height: 105vh;
 }
 h4 {
   color: #401801;
@@ -164,3 +164,125 @@ h4 {
   text-align: center;
   margin-bottom: 10px;
 }
+
+/* Seção de Projetos */
+#projetos {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#projetos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+/* GRID 3x3 fixo */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+/* Card base */
+.card {
+  background-color: var(--cor);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+}
+
+/* Topo colorido */
+.card .topo {
+  padding: 1rem;
+}
+
+.card .topo h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+/* Conteúdo escuro */
+.card .conteudo {
+  background-color: #111;
+  flex-grow: 1;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .categoria {
+  color: #F2EADF;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+}
+
+.card h4 {
+  color: #F2EADF;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.card p{
+  color: #F2EADF;
+}
+
+/* Links */
+.links {
+  margin-top: 1rem;
+}
+
+.links a {
+  color: #4A6382;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Hover bonito */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .projetos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.projetos-grid{
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
