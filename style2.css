@@ -1,0 +1,334 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #0b1736;
+  color: #cfbdaf;
+  overflow-x: hidden;
+}
+
+/* ===== MENU SUPERIOR ===== */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #132640;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header a {
+  color: #cfbdaf;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #f2eadf;
+}
+
+/* ===== ESTILO GERAL DE TÍTULOS ===== */
+h1, h2, h4 {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  text-align: center;
+  color: #f2eadf;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2, h4 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+h4{
+font-family: "Playball", cursive;
+  font-weight: 400;
+  text-align: center;
+color: #401801;}
+
+
+/* ===== SEÇÃO INICIAL ===== */
+.nome {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("./images/fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.nome img {
+  width: 320px;
+  height: auto;
+  border-radius: 88px;
+}
+
+.esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nome p {
+  font-size: 1.5rem;
+  color: #cfbdaf;
+}
+
+/* ===== SOBRE MIM ===== */
+#Sobre {
+  background-color: #f2eadf;
+  color: #401801;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Sobre h2 {
+  color: #4a6382;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+
+/* BLOCO DE CONTEÚDO SOBRE */
+.para {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#Sobre img {
+  width: 400px;
+  height: auto;
+  border-radius: 40px;
+  flex-shrink: 0;
+}
+
+.curso, .habilidades {
+  width: 30%;
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* ===== PROJETOS ===== */
+#projeto {
+  background-color: #0b1736;
+  min-height: 100vh;
+  padding: 5rem 1rem;
+}
+
+#projeto h3 {
+  color: #f2eadf;
+  
+  margin-bottom: 3rem;
+}
+
+/* GRID DE PROJETOS */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD DE PROJETO */
+.card {
+  background-color: var(--cor);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 230px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card .topo {
+  padding: 1rem;
+}
+
+.card .topo h3 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card .conteudo {
+  background-color: #111;
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h4 {
+  color: #f2eadf;
+  font-size: 1rem;
+}
+
+.card p {
+  color: #f2eadf;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+.links a {
+  color: #4a6382;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTATO ===== */
+#Contato {
+  background-image: url("./images/contato.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;     
+  align-items: center;        
+  justify-content: center;    
+  padding: 2rem 1rem; 
+}
+#Contato h4 {
+  align-self: flex-start;      
+  margin-bottom: 2rem;         
+  color: #401801;
+  font-family: "Playball", cursive;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+}
+
+
+.contact {
+  width: 420px;
+  padding: 2rem;
+  text-align: center;
+   margin-top: 0 auto;  
+   align-items: center;
+   justify-content: center;
+   background-color: #3b1a05;
+  border-radius: 40px;
+  padding: 2rem 3rem;
+  text-align: left;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact p {
+  color: #cfbdaf;
+  margin-bottom: 10px;
+}
+
+.img-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.img-contact img {
+  height: 24px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  h1 { font-size: 4rem; }
+  h2, h3, h4 { font-size: 4rem; }
+
+  .curso, .habilidades {
+    width: 45%;
+  }
+
+  #Sobre img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 3rem;
+  }
+
+  .nome {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .nome img {
+    width: 65%;
+  }
+
+  .para {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .curso, .habilidades {
+    width: 90%;
+  }
+  #Contato h4 {
+    font-size: 4rem;
+  }
+
+  .contact {
+    width: 85%;
+    padding: 1.5rem;
+  }
+
+  .img-contact img {
+    height: 22px;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+}
